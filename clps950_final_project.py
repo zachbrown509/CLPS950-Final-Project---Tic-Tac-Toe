@@ -193,7 +193,6 @@ def two_player_game():
     def main():
       print("Welcome to the two-player Tic Tac Toe game!")
       printBoard(board)
-      currentPlayer = 'X'
 
       while not isBoardFull(board):
           if not IsWinner(board, 'X'):
