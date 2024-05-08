@@ -196,6 +196,7 @@ def two_player_game():
 
       while not isBoardFull(board):
           if not IsWinner(board, 'X'):
+              playerMove('X')
               printBoard(board)
           else:
               print("Player 'O' wins! Congratulations!")
@@ -221,15 +222,14 @@ def two_player_game():
           break
       pass
 
-def main():
-    print("Welcome to the Tic Tac Toe game!")
+      print("Welcome to the Tic Tac Toe game!")
     mode = input("Enter 's' for single-player mode or 't' for two-player mode: ")
 
     if mode.lower() == 's':
         single_player_game()
     elif mode.lower() == 't':
         two_player_game()
-    else:
+
         print("Invalid input. Please try again.")
         main()
 
